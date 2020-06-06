@@ -1,0 +1,52 @@
+content{
+    /*background-color: grey;*/
+    width: 100vw;
+    height: 100vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+presentation {
+    display: block;
+    width: 80vmin;
+    height: 80vmin;
+}
+
+
+presentation>slide {
+  display: none;
+}
+
+
+presentation>slide.active {
+    display: block;
+}
+
+
+slide{
+    border:3px solid #443f3f;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 10%;
+    padding: 10%;
+    font-size: 6vmin;
+    /*font-family: Sans-Serif;*/
+    text-align: center;
+    font-weight: bold;
+}
+
+chooser{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+chooser *{
+    max-width: 30%;
+    margin: 15% 0%;
+}
